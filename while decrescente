@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{  int numero = 10;
+
+while (numero >= 1  ){
+    
+    printf("%i\n",numero);
+    numero--;
+  
+}
+}
