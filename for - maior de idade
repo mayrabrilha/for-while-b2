@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{ int i, d1,cont, maior;
+   
+
+ 
+ for (i = 1; i <= 5 ; i++){
+  
+   printf("Digite uma idade:");
+          scanf("%i", &d1);
+          
+   if(d1 >= 18){
+       maior ++;
+   }
+   
+   cont++;
+}
+
+    printf(" O total de pessoas com mais de 18 anos é: %i",maior);
+    
+}
+
