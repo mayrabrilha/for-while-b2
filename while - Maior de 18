@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main()
+{ int d1, cont, maior;
+   
+
+ 
+ while (cont < 5 ) {
+  
+   printf("Digite uma idade:");
+          scanf("%i", &d1);
+          
+   if(d1 >= 18){
+       maior ++;
+   }
+   
+   cont++;
+}
+
+    printf("oi %i",maior);
+    
+}
