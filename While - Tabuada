@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){ 
+    
+    int numero, cont = 1;
+ 
+   printf("Escreva um número de 1 á 10 e descubra sua tábuada \n");
+   scanf("%i", &numero);
+   
+   if(numero < 10 ){
+ 
+    printf("Tabuada do %d\n", numero);
+    
+    while (cont <= 10){
+     
+     printf("%d x %d = %d\n", numero, cont, numero * cont );
+     cont++;
+    
+ }
+        
+    
+    }else{
+     
+     printf("Número invalido");
+     
+ }    
+    
+    
+
+    
+}
+
