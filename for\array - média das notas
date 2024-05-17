@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{   
+    
+    int notas[4];
+    int media, soma, i;
+    
+    for (i = 0; i < 4; i++) {
+        printf("Digite a nota %d: ", i + 1);  
+        scanf("%d", &notas[i]); 
+        
+         soma += notas[i]; 
+    }
+    
+    media = soma / 4;  
+
+    printf("As notas digitadas foram:\n");
+    for (i = 0; i < 4; i++) {
+        printf("Nota %d: %.2d\n", i + 1, notas[i]);  
+        
+        // Exibe cada nota
+    }
+
+    printf("A média das notas é: %.2d\n", media);
+    
+
+    return 0;
+}
+
