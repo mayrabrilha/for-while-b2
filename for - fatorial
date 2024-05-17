@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int fatorial = 1;  // Valor inicial do fatorial
+    int limite = 12;   // Limite para evitar estouro
+
+    printf("Digite um número inteiro não negativo para calcular o fatorial (até %d): ", limite);
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("O fatorial não é definido para números negativos.\n");
+        return 1;
+    } else if (n > limite) {
+        printf("Número muito grande para calcular o fatorial com 'int'. Escolha um número até %d.\n", limite);
+        return 1;
+    }
+
+    printf("Resultado do fatorial: ");  // Exibe a expressão do fatorial
+
+    for ( i = n; i > 1; i--) {
+        printf("%d * ", i);  // Mostra os números multiplicados
+        fatorial *= i;       // Calcula o fatorial
+    }
+
+    // Para terminar a expressão, adicione o último número e exiba o resultado do fatorial
+    printf("1 = %d\n", fatorial);
+
+    return 0;
+}
+
+
