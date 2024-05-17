@@ -1,0 +1,31 @@
+
+#include <stdio.h>
+
+int main()
+{   
+    int alunos, i, media, soma;
+    
+    printf("Digite quantos alunos estão cadastrados na academia \n");
+    scanf("%i", &alunos);
+    
+    //tive que criar um vetor para armazenar
+    
+    float peso[alunos];
+    
+     for(i = 1; i <= alunos ; i++){
+         
+    printf("Digite o peso do aluno \n");
+    scanf("%f", &peso[i]);
+    soma += peso[i];
+    
+    //o [i] guarda automaticamente os valores na ordem
+    //Em C, a expressão soma += peso[i];; é um atalho para soma = soma + peso;
+    
+}
+    media = soma/alunos;
+    printf("A media é igual a: %d\n", media);
+    
+}
+
+
+
