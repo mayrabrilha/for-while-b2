@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{   
+    int alunos = 0, i, media, soma, conta = 0;
+    
+    printf("Digite quantos alunos estão cadastrados na academia \n");
+    scanf("%i", &alunos);
+    
+    //tive que criar um vetor para armazenar
+    
+    float peso[alunos];
+    
+     while ( alunos > conta){
+         
+    printf("\nDigite o peso do aluno \n");
+    scanf("%f", &peso[i]);
+    soma += peso[i];
+    conta++;
+    
+    
+}
+    media = soma/alunos;
+    printf("A media é igual a: %d\n", media);
+    
+}
