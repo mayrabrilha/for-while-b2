@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){ 
+    
+    int numero, i;
+ 
+   printf("Escreva um número de 1 á 10 e descubra sua tábuada \n");
+   scanf("%i", &numero);
+   
+   if(numero < 10 ){
+ 
+    printf("Tabuada do %d\n", numero);
+    
+     for(i = 0; i <= 10 ; i++){
+     
+     // %d: indica que será impresso um número inteiro (o número da tabuada).
+     
+     printf("%d x %d = %d\n", numero, i, numero * i );
+     
+    
+ }
+        
+    
+    }else{
+     
+     printf("Número invalido");
+     
+ }    
+    
+}
