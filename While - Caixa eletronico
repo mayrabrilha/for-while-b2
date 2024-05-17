@@ -1,0 +1,70 @@
+
+#include <stdio.h>
+
+int main()
+{   
+    
+    float opcao, saldo = 0, saque = 0, deposito= 0;
+    
+    
+    printf("Digite o número correspondente a sua operação \n 1 - consulta \n 2 - saque \n 3 - Deposito \n 4 - sair\n");
+    scanf("%f", &opcao);
+    
+    while(opcao <= 3){
+    
+            if(opcao == 1 ){
+                
+                printf(" Seu saldo é de R$%.2f", saldo);
+                    
+                printf("\nDigite o número correspondente a sua operação \n 1 - consulta \n 2 - saque \n 3 - Deposito \n 4 - sair\n");
+                scanf("%f", &opcao);
+            
+            } 
+            
+            else if(opcao == 2){
+                
+            printf("Digite o valor do saque:\n");
+            scanf("%f", &saque);
+                
+                if( saldo < saque){
+                        
+                printf("Não há saldo, faça um deposito");
+                        
+                }else{
+                        
+                saldo -= saque;  // Subtração correta
+                printf("Saque efetuado com sucesso. Valor total na conta: R$%.2f\n", saldo);
+                
+                    
+                }
+                    
+            printf("\nDigite o número correspondente a sua operação \n 1 - consulta \n 2 - saque \n 3 - Deposito \n 4 - sair\n");
+            scanf("%f", &opcao);
+            
+            }
+            
+            else if(opcao == 3 ){
+                
+                printf("Digite o valor do deposito: \n");
+                scanf("%f",&deposito);
+                
+                saldo += deposito;
+                
+                printf("Efetuado com sucesso, valor total na conta R$:%.2f",saldo);
+                
+            printf("\nDigite o número correspondente a sua operação \n 1 - consulta \n 2 - saque \n 3 - Deposito \n 4 - sair\n");
+            scanf("%f", &opcao); 
+            }
+            
+            else {
+            
+            printf("opção invalida");
+            
+            }
+    }
+    
+    printf("Obrigado por usar nosso sistema bancário!\n");
+    return 0;
+    
+}
+
