@@ -1,0 +1,46 @@
+
+#include <stdio.h>
+
+int main()
+{  int numero[5], par[5], impar[5], i, indice_par = 0, indice_impar = 0;
+    
+   
+   for (i = 0; i < 5; i++){
+        printf("Digite um número:");  
+        scanf("%i", &numero[i]);
+   
+     if (numero[i]%2 == 0){
+         par[indice_par] = numero[i];
+            indice_par++;
+         
+     }else{ 
+        impar[indice_impar] = numero[i];
+            indice_impar++;
+        
+     }
+     
+   }
+   
+   printf("Os números são:");
+    for (i = 0; i < 5; i++) {
+        printf(" %d", numero[i]);
+    }
+    printf("\n");
+     printf("Os números pares são:");
+    for (i = 0; i < indice_par; i++) {
+        printf(" %d", par[i]);
+    }
+    printf("\n");
+    
+    
+    printf("Os números impares são:");
+    for (i = 0; i < indice_impar; i++) {
+        printf(" %d", impar[i]);
+    }
+    printf("\n");
+    
+    
+              
+
+}
+
