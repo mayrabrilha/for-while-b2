@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    char cons[10];
+    int i, consoantes = 0;
+
+    printf("Digite 10 caracteres:\n");
+
+    
+    for(i = 0; i < 10; i++) {
+        scanf(" %c", &cons[i]);
+    }
+
+    printf("\nConsoantes lidas:\n");
+
+    // Verificando consoantes
+    for(i = 0; i < 10; i++) {
+        
+        if(cons[i] != 'a' && cons[i] != 'e' && cons[i] != 'i' && cons[i] != 'o' && cons[i] != 'u' &&
+           cons[i] != 'A' && cons[i] != 'E' && cons[i] != 'I' && cons[i] != 'O' && cons[i] != 'U') {
+            printf("%c ", cons[i]);
+            consoantes++;
+        }
+    }
+
+    printf("\nTotal de consoantes lidas: %d\n", consoantes);
+
+    return 0;
+}
